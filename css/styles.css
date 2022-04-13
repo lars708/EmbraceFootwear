@@ -13,7 +13,7 @@ body {
 /* Changing the background colour for the header */
 
 header {
-	background-color: #B82AA6;
+	background-color: #EC00A3;
 }
 
 /* Changing the background color for the navigation bar */
@@ -26,4 +26,8 @@ header {
 
 footer a:hover {
 	opacity: .5;
+}
+
+h1 {
+  text-shadow : 2px 2px 10px;
 }
