@@ -150,7 +150,7 @@
               <p class="card-text">Sign up for our newsletter and we'll send you an e-mail as soon as pre-orders go live for the very first Embrace sneaker line. That way, you can embrace yourself and others AND a trendsetter!</p>
             </div>
             <div class="card-footer p-2 text-end">
-              <a href="#" class="btn btn-primary">Sign up</a>
+              <a href="offcanvas" class="btn btn-primary" data-bs-target="#offcanvas" data-bs-toggle="offcanvas" aria-controls="offcanvas">Sign up</a>
             </div>
           </div>
         </div>
@@ -181,6 +181,40 @@
         </ul>
       </div>
     </footer>
+	  
+	  
+	  
+	  
+	  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel" style="visibility: hidden;" aria-modal="true" role="dialog">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title" id="offcanvasLabel">Newsletter sign up</h3>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body"
+        <hr>
+        <div>
+          <h5>We'll send you a message whenever our shoes become available.</h5>
+          <!-- This form includes required fields. For more details on validation,
+            see https://getbootstrap.com/docs/5.1/forms/validation/ -->
+          <form class="needs-validation" method="post" action="mailto:192069@buas.nl?subject=NewsletterSignup" enctype="text/plain">
+            <div class="my-3">
+              <label for="emailfield" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="emailfield" name="sender-email" required="">
+            </div>
+            
+            <div class="form-check my-3">
+              <input type="checkbox" class="form-check-input" id="newsletter" name="subscribe-newsletter" checked="">
+              <label class="form-check-label" for="newsletter">
+                
+                <span class="text-cyan fw-bold"></span><span class="text-magenta fw-bold"></span>
+       Yes, also send me the latest deals and offers from Embrace Footwear.
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign up</button>
+          </form>
+        </div>
+</div>
+    </div>
     <!-- End of the grid -->
 
   </body>
